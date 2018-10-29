@@ -1,0 +1,8 @@
+{
+    "Name": "Max Mustermann",
+    "Exercise_Sheet_No": "1",
+    "Class": ["Example Class 1 2018/19", "Example Class 2 2018/19", "Example Class 3 2018/19"],
+	"Literature": "n",
+    "No_of_Tasks": 1,
+    "_extensions": ["jinja2_time.TimeExtension"]
+}

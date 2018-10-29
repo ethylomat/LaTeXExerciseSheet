@@ -1,0 +1,31 @@
+% Created: {% now 'local' %}
+% Author: {{ cookiecutter.Name }}
+% Class: {{ cookiecutter.Class }}
+% Sheet: {{ cookiecutter.Exercise_Sheet_No.zfill(2) }}
+
+\documentclass[a4paper]{article}
+\input{head}
+ 
+\rhead{ {{- cookiecutter.Name -}} }
+\lhead{ {{- cookiecutter.Class -}} }
+\chead{\today}
+\cfoot{Seite \thepage}
+
+\begin{document}
+
+{% for i in range(cookiecutter.No_of_Tasks|int) %}
+
+%%%%%%
+%%%%%%		Aufgabe {{cookiecutter.Exercise_Sheet_No -}}.{{- i+1 }}
+%%%%%%
+
+\section*{Aufgabe {{cookiecutter.Exercise_Sheet_No -}}.{{- i+1 -}} }  
+
+% Add answer.
+
+{% endfor %}
+
+{% if cookiecutter.Literature == 'y' %}
+\printbibliography 
+{% endif %}
+\end{document}

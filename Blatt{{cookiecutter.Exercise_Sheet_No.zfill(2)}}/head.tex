@@ -1,0 +1,67 @@
+% Header File defining LaTeX Template
+
+% Language and Utf-8 Support
+\usepackage[utf8]{inputenc}
+\usepackage{polyglossia}
+\setmainlanguage{german}
+\setotherlanguages{english}
+
+%% Layout / Structure
+%%
+
+% Document Layout
+\usepackage[margin=3cm]{geometry}
+
+% Header and Footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{} % Clean header and footer
+
+% Package for tabularx Tables
+\usepackage{tabularx}
+
+
+%%	Typography / Fonts
+%%
+
+% Setting Template-Fonts
+\usepackage{fontspec} 
+\setmainfont{Linux Libertine}
+\setsansfont{Optima}
+\setmonofont[Scale=MatchLowercase]{Menlo}
+
+% Typography Enhancements
+\usepackage{microtype}
+
+%%	Literature / Cites
+%%
+
+% Zitate
+\usepackage[autostyle]{csquotes}
+
+{% if cookiecutter.Literature == 'y' %}
+\usepackage[
+    backend=biber,
+    style=authoryear-icomp,
+    sortlocale=de_DE,
+    natbib=true,
+    url=false, 
+    doi=true,
+    eprint=false
+]{biblatex}
+\addbibresource{literature.bib}
+{% endif %}
+
+% Urls / Hyperlinks
+\usepackage[colorlinks, linkcolor = black, citecolor = black, filecolor = black, urlcolor = blue]{hyperref} 
+
+
+%% 	Own definitions / commands
+%%
+
+% Itemize* for compact Itemize Environment 
+\newenvironment{itemize*}%
+{\begin{itemize}%
+	\setlength{\itemsep}{0.3em}%
+	\setlength{\parskip}{0pt}}%
+{\end{itemize}}
