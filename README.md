@@ -9,7 +9,7 @@ Install `cookiecutter` command line: `pip install cookiecutter`
 
 Usage
 -----
-Generate a new Cookiecutter template layout: `cookiecutter gh:ethylomat/uebungszettel`    
+Generate a new Cookiecutter template layout: `cookiecutter gh:ethylomat/LaTeXExerciseSheet`    
 
 Example
 -------
