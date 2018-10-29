@@ -15,7 +15,7 @@ Example
 -------
 ```console
 # Create a project directory
-foo@bar:~$ cookiecutter cookiecutter gh:ethylomat/LaTeXExerciseSheet
+foo@bar:~$ cookiecutter gh:ethylomat/LaTeXExerciseSheet
 Name [Max Mustermann]: Max Mustermann
 Exercise_Sheet_No [1]: 
 Select Class:
